@@ -42,9 +42,18 @@ EditorBuildSettings:
     path: Assets/Scenes/Level2/level2.unity
     guid: 3ca359bef28ee5e41ac4dac22eba6563
   - enabled: 1
-    path: Assets/Scenes/Level3/level3.1.unity
+    path: Assets/Scenes/choice Character.unity
+    guid: be891ce12ebe9ac4fb1b90854b7792db
+  - enabled: 1
+    path: Assets/Scenes/Level3/personagem1_ultimaFase/level3.1Personagem1.unity
     guid: 57de5698c9217654a8825093d3adde8c
   - enabled: 1
-    path: Assets/Scenes/Level3/level3.2.unity
+    path: Assets/Scenes/Level3/personagem1_ultimaFase/level3.2Personagem1.unity
     guid: 1444fc4d046d5bd44bd3ac2825ae8c1e
+  - enabled: 1
+    path: Assets/Scenes/Level3/personagem2_ultimaFase/level3.1Personagem2.unity
+    guid: bdec6cda5a695d3428a73ae8e9fa6029
+  - enabled: 1
+    path: Assets/Scenes/Level3/personagem2_ultimaFase/level3.2Personagem2.unity
+    guid: 4758c25958f9cf147bd7cef0daa1e3d2
   m_configObjects: {}

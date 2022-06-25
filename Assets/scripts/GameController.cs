@@ -8,6 +8,8 @@ public class GameController : MonoBehaviour
     public List<string> _ItemsInventory= new List<string>();
 
     public static GameController Instance;
+
+	public string playerSelected;
     
     void Start()
     {
@@ -25,6 +27,4 @@ public class GameController : MonoBehaviour
 	public bool existItem(string nameItem){
 		return _ItemsInventory.Contains(nameItem);
 	}
-
-
 }

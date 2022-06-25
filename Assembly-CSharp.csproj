@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{d83c3d4a-5b83-61a1-9bde-b2752c219377}</ProjectGuid>
+    <ProjectGuid>{ed381779-a008-8c29-d47b-1a1cc12824a7}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -47,6 +47,7 @@
      <Compile Include="Assets\scripts\dialogueBox\dialogue.cs" />
      <Compile Include="Assets\scripts\Menu\ButtonsMenu.cs" />
      <Compile Include="Assets\scripts\computerCode.cs" />
+     <Compile Include="Assets\scripts\Interacter\InteractChest.cs" />
      <Compile Include="Assets\scripts\Interacter\InteractObject.cs" />
      <Compile Include="Assets\scripts\Interacter\InteractButton.cs" />
      <Compile Include="Assets\scripts\CloudController.cs" />
@@ -63,6 +64,7 @@
      <Compile Include="Assets\scripts\Inventory\clickPaper.cs" />
      <Compile Include="Assets\scripts\Parallax.cs" />
      <Compile Include="Assets\scripts\Hurricane1.cs" />
+     <Compile Include="Assets\scripts\ChestCode.cs" />
      <Compile Include="Assets\scripts\LoadLevel.cs" />
      <Compile Include="Assets\scripts\MusicContinue.cs" />
      <Compile Include="Assets\scripts\Menu\Configuration.cs" />
@@ -78,8 +80,7 @@
      <Compile Include="Assets\scripts\GameController.cs" />
      <Compile Include="Assets\scripts\GameOver.cs" />
      <Compile Include="Assets\scripts\CameraPivot.cs" />
-     <Compile Include="Assets\scripts\Interacter\InteractChest.cs" />
-     <Compile Include="Assets\scripts\ChestCode.cs" />
+     <Compile Include="Assets\scripts\PlayerChange.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
@@ -325,10 +326,10 @@
         <HintPath>D:\Program Files\Unity\Hub\Editor\2020.3.27f1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
     </Reference>
     <Reference Include="mysql.data">
-        <HintPath>C:\Users\luana\OneDrive\Área de Trabalho\⠀\DS-Etec\3° Semestre\DTCC\tcc\NomeDaora\Assets\scripts\Pluggins\mysql.data.dll</HintPath>
+        <HintPath>C:\Users\luana\OneDrive\Área de Trabalho\⠀\DS-Etec\3° Semestre\DTCC\tcc\distopiaLast\Assets\scripts\Pluggins\mysql.data.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
-        <HintPath>C:\Users\luana\OneDrive\Área de Trabalho\⠀\DS-Etec\3° Semestre\DTCC\tcc\NomeDaora\Library\PackageCache\com.unity.nuget.newtonsoft-json@2.0.0\Runtime\Newtonsoft.Json.dll</HintPath>
+        <HintPath>C:\Users\luana\OneDrive\Área de Trabalho\⠀\DS-Etec\3° Semestre\DTCC\tcc\distopiaLast\Library\PackageCache\com.unity.nuget.newtonsoft-json@2.0.0\Runtime\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
         <HintPath>D:\Program Files\Unity\Hub\Editor\2020.3.27f1\Editor\Data\NetStandard\ref\2.0.0\netstandard.dll</HintPath>
@@ -676,100 +677,100 @@
         <HintPath>D:\Program Files\Unity\Hub\Editor\2020.3.27f1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Xml.Serialization.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Animation.Editor">
-        <HintPath>C:\Users\luana\OneDrive\Área de Trabalho\⠀\DS-Etec\3° Semestre\DTCC\tcc\NomeDaora\Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll</HintPath>
+        <HintPath>C:\Users\luana\OneDrive\Área de Trabalho\⠀\DS-Etec\3° Semestre\DTCC\tcc\distopiaLast\Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.InternalAPIEngineBridge.001">
-        <HintPath>C:\Users\luana\OneDrive\Área de Trabalho\⠀\DS-Etec\3° Semestre\DTCC\tcc\NomeDaora\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll</HintPath>
+        <HintPath>C:\Users\luana\OneDrive\Área de Trabalho\⠀\DS-Etec\3° Semestre\DTCC\tcc\distopiaLast\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-        <HintPath>C:\Users\luana\OneDrive\Área de Trabalho\⠀\DS-Etec\3° Semestre\DTCC\tcc\NomeDaora\Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
+        <HintPath>C:\Users\luana\OneDrive\Área de Trabalho\⠀\DS-Etec\3° Semestre\DTCC\tcc\distopiaLast\Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.PixelPerfect">
-        <HintPath>C:\Users\luana\OneDrive\Área de Trabalho\⠀\DS-Etec\3° Semestre\DTCC\tcc\NomeDaora\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll</HintPath>
+        <HintPath>C:\Users\luana\OneDrive\Área de Trabalho\⠀\DS-Etec\3° Semestre\DTCC\tcc\distopiaLast\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Tilemap.Editor">
-        <HintPath>C:\Users\luana\OneDrive\Área de Trabalho\⠀\DS-Etec\3° Semestre\DTCC\tcc\NomeDaora\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll</HintPath>
+        <HintPath>C:\Users\luana\OneDrive\Área de Trabalho\⠀\DS-Etec\3° Semestre\DTCC\tcc\distopiaLast\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll</HintPath>
     </Reference>
     <Reference Include="PsdPlugin">
-        <HintPath>C:\Users\luana\OneDrive\Área de Trabalho\⠀\DS-Etec\3° Semestre\DTCC\tcc\NomeDaora\Library\ScriptAssemblies\PsdPlugin.dll</HintPath>
+        <HintPath>C:\Users\luana\OneDrive\Área de Trabalho\⠀\DS-Etec\3° Semestre\DTCC\tcc\distopiaLast\Library\ScriptAssemblies\PsdPlugin.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-        <HintPath>C:\Users\luana\OneDrive\Área de Trabalho\⠀\DS-Etec\3° Semestre\DTCC\tcc\NomeDaora\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
+        <HintPath>C:\Users\luana\OneDrive\Área de Trabalho\⠀\DS-Etec\3° Semestre\DTCC\tcc\distopiaLast\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualStudio.Editor">
-        <HintPath>C:\Users\luana\OneDrive\Área de Trabalho\⠀\DS-Etec\3° Semestre\DTCC\tcc\NomeDaora\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
+        <HintPath>C:\Users\luana\OneDrive\Área de Trabalho\⠀\DS-Etec\3° Semestre\DTCC\tcc\distopiaLast\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-        <HintPath>C:\Users\luana\OneDrive\Área de Trabalho\⠀\DS-Etec\3° Semestre\DTCC\tcc\NomeDaora\Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
+        <HintPath>C:\Users\luana\OneDrive\Área de Trabalho\⠀\DS-Etec\3° Semestre\DTCC\tcc\distopiaLast\Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-        <HintPath>C:\Users\luana\OneDrive\Área de Trabalho\⠀\DS-Etec\3° Semestre\DTCC\tcc\NomeDaora\Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
+        <HintPath>C:\Users\luana\OneDrive\Área de Trabalho\⠀\DS-Etec\3° Semestre\DTCC\tcc\distopiaLast\Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.IK.Editor">
-        <HintPath>C:\Users\luana\OneDrive\Área de Trabalho\⠀\DS-Etec\3° Semestre\DTCC\tcc\NomeDaora\Library\ScriptAssemblies\Unity.2D.IK.Editor.dll</HintPath>
+        <HintPath>C:\Users\luana\OneDrive\Área de Trabalho\⠀\DS-Etec\3° Semestre\DTCC\tcc\distopiaLast\Library\ScriptAssemblies\Unity.2D.IK.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Sprite.Editor">
-        <HintPath>C:\Users\luana\OneDrive\Área de Trabalho\⠀\DS-Etec\3° Semestre\DTCC\tcc\NomeDaora\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll</HintPath>
+        <HintPath>C:\Users\luana\OneDrive\Área de Trabalho\⠀\DS-Etec\3° Semestre\DTCC\tcc\distopiaLast\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Psdimporter.Editor">
-        <HintPath>C:\Users\luana\OneDrive\Área de Trabalho\⠀\DS-Etec\3° Semestre\DTCC\tcc\NomeDaora\Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll</HintPath>
+        <HintPath>C:\Users\luana\OneDrive\Área de Trabalho\⠀\DS-Etec\3° Semestre\DTCC\tcc\distopiaLast\Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Path.Editor">
-        <HintPath>C:\Users\luana\OneDrive\Área de Trabalho\⠀\DS-Etec\3° Semestre\DTCC\tcc\NomeDaora\Library\ScriptAssemblies\Unity.2D.Path.Editor.dll</HintPath>
+        <HintPath>C:\Users\luana\OneDrive\Área de Trabalho\⠀\DS-Etec\3° Semestre\DTCC\tcc\distopiaLast\Library\ScriptAssemblies\Unity.2D.Path.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.InternalAPIEditorBridge.001">
-        <HintPath>C:\Users\luana\OneDrive\Área de Trabalho\⠀\DS-Etec\3° Semestre\DTCC\tcc\NomeDaora\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll</HintPath>
+        <HintPath>C:\Users\luana\OneDrive\Área de Trabalho\⠀\DS-Etec\3° Semestre\DTCC\tcc\distopiaLast\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-        <HintPath>C:\Users\luana\OneDrive\Área de Trabalho\⠀\DS-Etec\3° Semestre\DTCC\tcc\NomeDaora\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
+        <HintPath>C:\Users\luana\OneDrive\Área de Trabalho\⠀\DS-Etec\3° Semestre\DTCC\tcc\distopiaLast\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PlasticSCM.Editor">
-        <HintPath>C:\Users\luana\OneDrive\Área de Trabalho\⠀\DS-Etec\3° Semestre\DTCC\tcc\NomeDaora\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
+        <HintPath>C:\Users\luana\OneDrive\Área de Trabalho\⠀\DS-Etec\3° Semestre\DTCC\tcc\distopiaLast\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-        <HintPath>C:\Users\luana\OneDrive\Área de Trabalho\⠀\DS-Etec\3° Semestre\DTCC\tcc\NomeDaora\Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
+        <HintPath>C:\Users\luana\OneDrive\Área de Trabalho\⠀\DS-Etec\3° Semestre\DTCC\tcc\distopiaLast\Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-        <HintPath>C:\Users\luana\OneDrive\Área de Trabalho\⠀\DS-Etec\3° Semestre\DTCC\tcc\NomeDaora\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
+        <HintPath>C:\Users\luana\OneDrive\Área de Trabalho\⠀\DS-Etec\3° Semestre\DTCC\tcc\distopiaLast\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Mathematics">
-        <HintPath>C:\Users\luana\OneDrive\Área de Trabalho\⠀\DS-Etec\3° Semestre\DTCC\tcc\NomeDaora\Library\ScriptAssemblies\Unity.Mathematics.dll</HintPath>
+        <HintPath>C:\Users\luana\OneDrive\Área de Trabalho\⠀\DS-Etec\3° Semestre\DTCC\tcc\distopiaLast\Library\ScriptAssemblies\Unity.Mathematics.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.IK.Runtime">
-        <HintPath>C:\Users\luana\OneDrive\Área de Trabalho\⠀\DS-Etec\3° Semestre\DTCC\tcc\NomeDaora\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll</HintPath>
+        <HintPath>C:\Users\luana\OneDrive\Área de Trabalho\⠀\DS-Etec\3° Semestre\DTCC\tcc\distopiaLast\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Cinemachine">
-        <HintPath>C:\Users\luana\OneDrive\Área de Trabalho\⠀\DS-Etec\3° Semestre\DTCC\tcc\NomeDaora\Library\ScriptAssemblies\Cinemachine.dll</HintPath>
+        <HintPath>C:\Users\luana\OneDrive\Área de Trabalho\⠀\DS-Etec\3° Semestre\DTCC\tcc\distopiaLast\Library\ScriptAssemblies\Cinemachine.dll</HintPath>
     </Reference>
     <Reference Include="com.unity.cinemachine.editor">
-        <HintPath>C:\Users\luana\OneDrive\Área de Trabalho\⠀\DS-Etec\3° Semestre\DTCC\tcc\NomeDaora\Library\ScriptAssemblies\com.unity.cinemachine.editor.dll</HintPath>
+        <HintPath>C:\Users\luana\OneDrive\Área de Trabalho\⠀\DS-Etec\3° Semestre\DTCC\tcc\distopiaLast\Library\ScriptAssemblies\com.unity.cinemachine.editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Animation.Triangle.Runtime">
-        <HintPath>C:\Users\luana\OneDrive\Área de Trabalho\⠀\DS-Etec\3° Semestre\DTCC\tcc\NomeDaora\Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Runtime.dll</HintPath>
+        <HintPath>C:\Users\luana\OneDrive\Área de Trabalho\⠀\DS-Etec\3° Semestre\DTCC\tcc\distopiaLast\Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Animation.Runtime">
-        <HintPath>C:\Users\luana\OneDrive\Área de Trabalho\⠀\DS-Etec\3° Semestre\DTCC\tcc\NomeDaora\Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll</HintPath>
+        <HintPath>C:\Users\luana\OneDrive\Área de Trabalho\⠀\DS-Etec\3° Semestre\DTCC\tcc\distopiaLast\Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.PixelPerfect.Editor">
-        <HintPath>C:\Users\luana\OneDrive\Área de Trabalho\⠀\DS-Etec\3° Semestre\DTCC\tcc\NomeDaora\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll</HintPath>
+        <HintPath>C:\Users\luana\OneDrive\Área de Trabalho\⠀\DS-Etec\3° Semestre\DTCC\tcc\distopiaLast\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
-        <HintPath>C:\Users\luana\OneDrive\Área de Trabalho\⠀\DS-Etec\3° Semestre\DTCC\tcc\NomeDaora\Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
+        <HintPath>C:\Users\luana\OneDrive\Área de Trabalho\⠀\DS-Etec\3° Semestre\DTCC\tcc\distopiaLast\Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Mathematics.Editor">
-        <HintPath>C:\Users\luana\OneDrive\Área de Trabalho\⠀\DS-Etec\3° Semestre\DTCC\tcc\NomeDaora\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll</HintPath>
+        <HintPath>C:\Users\luana\OneDrive\Área de Trabalho\⠀\DS-Etec\3° Semestre\DTCC\tcc\distopiaLast\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Common.Runtime">
-        <HintPath>C:\Users\luana\OneDrive\Área de Trabalho\⠀\DS-Etec\3° Semestre\DTCC\tcc\NomeDaora\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll</HintPath>
+        <HintPath>C:\Users\luana\OneDrive\Área de Trabalho\⠀\DS-Etec\3° Semestre\DTCC\tcc\distopiaLast\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.SpriteShape.Editor">
-        <HintPath>C:\Users\luana\OneDrive\Área de Trabalho\⠀\DS-Etec\3° Semestre\DTCC\tcc\NomeDaora\Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll</HintPath>
+        <HintPath>C:\Users\luana\OneDrive\Área de Trabalho\⠀\DS-Etec\3° Semestre\DTCC\tcc\distopiaLast\Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Common.Editor">
-        <HintPath>C:\Users\luana\OneDrive\Área de Trabalho\⠀\DS-Etec\3° Semestre\DTCC\tcc\NomeDaora\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll</HintPath>
+        <HintPath>C:\Users\luana\OneDrive\Área de Trabalho\⠀\DS-Etec\3° Semestre\DTCC\tcc\distopiaLast\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.SpriteShape.Runtime">
-        <HintPath>C:\Users\luana\OneDrive\Área de Trabalho\⠀\DS-Etec\3° Semestre\DTCC\tcc\NomeDaora\Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll</HintPath>
+        <HintPath>C:\Users\luana\OneDrive\Área de Trabalho\⠀\DS-Etec\3° Semestre\DTCC\tcc\distopiaLast\Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
